@@ -18,6 +18,11 @@ import { loadMicroApp } from 'qiankun';
 // document.querySelector('#unmount').addEventListener('click', unmount);
 
 loadMicroApp(
+  { name: 'vue', entry: '//localhost:7101', container: '#vue' },
+  { sandbox: { experimentalStyleIsolation: true } }
+);
+
+loadMicroApp(
   { name: 'vue3', entry: '//localhost:7105', container: '#vue3' },
   { sandbox: { experimentalStyleIsolation: true } }
 );
